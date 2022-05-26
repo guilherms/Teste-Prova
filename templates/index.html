@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/static/style.css">
+  <title>Linguagens</title>
+</head>
+<body>
+  <h1>Linguagens de Programação para Aprender</h1>
+  <form action="/create" method="POST">
+    <input name='name' placeholder='Nome da Linguagem'>
+    <button type="submit">Adicionar</button>
+     </form>
+  <ul>
+    {% for c in ling %}
+    <li class="ling"> {{c.name}} </li>
+    </form>
+    {% endfor %}
+  </ul>
+  
+</body>
+</html>

@@ -1,0 +1,27 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+h1 { 
+  background-image: url("https://portogente.com.br/images/portopedia/2017/tecno-da-_Infor-aplicada-%C3%A0-_log-fig-1.jpg");
+  height: 100px;
+  text-align: center;
+  padding-top: 50px;
+  color: white;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 12px;
+  border: 12px;
+  width: 10px;
+}
+
+ul {
+  text-align: center;
+  margin: 12px;
+  border: 12px;
+}
