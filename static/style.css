@@ -17,11 +17,31 @@ form {
   align-items: center;
   margin: 12px;
   border: 12px;
-  width: 10px;
+  height: 100px;
 }
 
 ul {
+  display: block;
+  padding-right: 450px;
+  padding-left: 450px;
+}
+
+.ling {
   text-align: center;
-  margin: 12px;
-  border: 12px;
+  width: 350px;
+  color: white;
+  border-radius: 5px;
+  background-color: #30739c;
+  margin: 10px;
+  font-size: 20px;
+  display: block;
+  margin-bottom: 15px;
+  padding: 5px;
+}
+
+button{
+  width: 90px; height: 30px; margin: 9px;
+}
+input{
+  height: 30px; width: 300px; margin: 9px;
 }

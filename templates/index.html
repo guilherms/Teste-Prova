@@ -10,9 +10,10 @@
 <body>
   <h1>Linguagens de Programação para Aprender</h1>
   <form action="/create" method="POST">
-    <input name='name' placeholder='Nome da Linguagem'>
-    <button type="submit">Adicionar</button>
-     </form>
+    <input name='name' placeholder=' Nome da Linguagem'>
+    <button type="submit">Adicionar</button> <br> 
+  </form>  
+  <hr>
   <ul>
     {% for c in ling %}
     <li class="ling"> {{c.name}} </li>
