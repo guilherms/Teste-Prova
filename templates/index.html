@@ -20,6 +20,19 @@
     </form>
     {% endfor %}
   </ul>
+  </div>
+    {% with messages =
+get_flashed_messages(with_categories=true) %}
+    {% if messages %}
+      <div class="messages">
+      {% for type, text in messages %}
+        <span class="{{ type }}">
+        {{ text }}
+        </span>
+      {% endfor %}
+       </div>
+    {% endif %}
+  {% endwith %}
   
 </body>
 </html>

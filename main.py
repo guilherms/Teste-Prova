@@ -1,8 +1,9 @@
-from flask import Flask, render_template, request, redirect
+from flask import Flask, render_template, request, redirect, flash
 from flask_sqlalchemy import SQLAlchemy
 
 app = Flask('app') 
 app = Flask(__name__)
+app.config['SECRET_KEY'] = 'secret'
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///database.db'
 db = SQLAlchemy(app)
 
@@ -26,6 +27,7 @@ def index():
 
 @app.route('/create', methods=['POST'])
 def create():
+  flash('Sucesso', 'success')
   name = request.form.get('name')
   ling.append({'name': name})
   new_lings = lingua(name=name)
